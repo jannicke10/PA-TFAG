@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="A responsive portfolio website presenting background, skills, projects, and an accessible contact form."
+  >
+  <title>Jannicke G. Naesse | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Source+Serif+4:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand-block">
+      <p class="eyebrow">Web Development Essentials</p>
+      <a class="brand" href="#home">Jannicke G. Naesse</a>
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label="Open navigation menu"
+    >
+      Menu
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#impact">Impact</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio Website</p>
+        <h1>Accessible web page? Mayhaps.</h1>
+        <p class="hero-text">
+         Hello world. I am Jannicke.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View My Work</a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Professional snapshot">
+        <p class="card-label">Current Focus</p>
+        <ul class="snapshot-list">
+          <li>Semantic HTML5 structure</li>
+          <li>Responsive CSS layouts</li>
+          <li>Accessible form design</li>
+          <li>Sustainable front-end choices</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="about" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Personal Information</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Yoyoyo, I believe I have som UX trauma from making endless wireframes and roadmaps for earlier projects. I will have to overcome my Figma trauma. Wish me luck.
+          </p>
+          <p>
+            I am especially interested in getting a deep dive in front end development, as I work as a team lead and product owner for TV 2s help pages and customer service chatbot!
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Interests</h3>
+          <ul class="tag-list">
+            <li>My two little propellar kiddos</li>
+            <li>Frontend development</li>
+            <li>Learning user behaviour</li>
+            <li>Learning about user needs.</li>
+            <li>Analyzing user data</li>
+            <li>Content strategy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section section-alt">
+      <div class="section-heading">
+        <p class="eyebrow">Strengths</p>
+        <h2>Skills and Approach</h2>
+      </div>
+      <div class="card-grid">
+        <article class="info-card">
+          <h3>HTML5</h3>
+          <p>Using semantic structure to improve readability, SEO, and screen reader support.</p>
+        </article>
+        <article class="info-card">
+          <h3>CSS3</h3>
+          <p>Building responsive layouts with flexible grids, custom properties, and clear visual hierarchy.</p>
+        </article>
+        <article class="info-card">
+          <h3>JavaScript</h3>
+          <p>Adding client-side validation and small interactions that improve usability without excess complexity.</p>
+        </article>
+        <article class="info-card">
+          <h3>UX Thinking</h3>
+          <p>Designing around user needs through research, iteration, and testing rather than assumptions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Sample Work</p>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="card-grid">
+        <article class="project-card">
+          <p class="card-label">Portfolio Concept</p>
+          <h3>Student Portfolio</h3>
+          <p>
+            A single-page personal site that introduces my background, highlights my skills, and
+            gives visitors a clear way to get in touch.
+          </p>
+        </article>
+        <article class="project-card">
+          <p class="card-label">UX Process</p>
+          <h3>Prototype to Website</h3>
+          <p>
+            A workflow that starts with user research, moves through sketches and Figma prototypes,
+            and ends in accessible front-end implementation.
+          </p>
+        </article>
+        <article class="project-card">
+          <p class="card-label">Performance</p>
+          <h3>Low-Overhead Frontend</h3>
+          <p>
+            A lightweight interface that minimizes unnecessary assets and scripting to support speed
+            and sustainability.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="impact" class="content-section section-alt">
+      <div class="section-heading">
+        <p class="eyebrow">Ethics and Sustainability</p>
+        <h2>Responsible Design Choices</h2>
+      </div>
+      <div class="two-column">
+        <article class="panel">
+          <h3>Sustainable Development</h3>
+          <p>
+            This page keeps its footprint low by using a simple file structure, limited JavaScript,
+            and content-first design. That reduces transfer size and improves loading performance.
+          </p>
+        </article>
+        <article class="panel">
+          <h3>Ethical Considerations</h3>
+          <p>
+            The design avoids dark patterns, provides clear navigation, respects user intent, and
+            uses accessible contrast, focus states, and form feedback.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Contact Form</h2>
+      </div>
+      <div class="contact-layout">
+        <div>
+          <p>
+            This form validates your input in the browser and prepares an email message. It is built
+            to be keyboard-friendly and readable with assistive technologies.
+          </p>
+          <p><strong>Email:</strong> hello@example.com</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <p class="error-message" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <p class="error-message" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <p class="error-message" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <button class="button button-primary" type="submit">Send Message</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with semantic HTML, responsive CSS, and lightweight JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
