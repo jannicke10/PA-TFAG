@@ -1,14 +1,14 @@
 :root {
-  --bg: #f5f0e8;
-  --bg-strong: #e6dccd;
-  --surface: rgba(255, 252, 247, 0.8);
-  --surface-strong: #fffaf2;
-  --text: #1d1a16;
-  --muted: #60584d;
-  --accent: #b24c2e;
-  --accent-dark: #8f371d;
-  --border: rgba(29, 26, 22, 0.14);
-  --shadow: 0 20px 50px rgba(48, 36, 22, 0.08);
+  --bg: #100118;
+  --bg-strong: #261a40;
+  --surface: rgba(38, 26, 64, 0.82);
+  --surface-strong: #261a40;
+  --text: #f3f0ff;
+  --muted: #b2aeff;
+  --accent: #6704ff;
+  --accent-dark: #7d31ff;
+  --border: rgba(178, 174, 255, 0.2);
+  --shadow: 0 20px 50px rgba(4, 0, 12, 0.45);
   --radius: 20px;
   --max-width: 1120px;
 }
@@ -27,8 +27,9 @@ body {
   margin: 0;
   font-family: "Manrope", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(178, 76, 46, 0.12), transparent 26%),
-    linear-gradient(180deg, #f9f4ed 0%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(103, 4, 255, 0.3), transparent 24%),
+    radial-gradient(circle at top right, rgba(178, 174, 255, 0.12), transparent 18%),
+    linear-gradient(180deg, #160223 0%, var(--bg) 48%, #090010 100%);
   color: var(--text);
   line-height: 1.6;
 }
@@ -46,7 +47,7 @@ a {
   position: absolute;
   left: 1rem;
   top: -3rem;
-  background: var(--text);
+  background: var(--accent);
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -74,6 +75,7 @@ a {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(12px);
+  background: rgba(16, 1, 24, 0.55);
 }
 
 .brand-block {
@@ -104,6 +106,14 @@ a {
 .site-nav a {
   text-decoration: none;
   font-weight: 600;
+  color: var(--muted);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.brand:hover,
+.brand:focus-visible {
+  color: var(--text);
 }
 
 .menu-toggle {
@@ -190,7 +200,8 @@ a {
 
 .button-secondary {
   border-color: var(--border);
-  background: transparent;
+  background: rgba(178, 174, 255, 0.08);
+  color: var(--text);
 }
 
 .content-section {
@@ -198,7 +209,7 @@ a {
 }
 
 .section-alt {
-  background: rgba(255, 250, 242, 0.5);
+  background: rgba(178, 174, 255, 0.05);
   border-radius: 2rem;
   padding-inline: 1.25rem;
 }
@@ -262,14 +273,14 @@ textarea:focus-visible,
 .site-nav a:focus-visible,
 .button:focus-visible,
 .menu-toggle:focus-visible {
-  outline: 3px solid rgba(178, 76, 46, 0.25);
+  outline: 3px solid rgba(178, 174, 255, 0.35);
   outline-offset: 3px;
 }
 
 .error-message {
   min-height: 1.2rem;
   margin: 0;
-  color: #a22525;
+  color: #ff9cc9;
   font-size: 0.95rem;
 }
 
@@ -306,9 +317,10 @@ textarea:focus-visible,
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 0.7rem 1rem;
-    background: var(--surface-strong);
+    background: rgba(38, 26, 64, 0.94);
     font: inherit;
     font-weight: 700;
+    color: var(--text);
   }
 
   .site-nav {
