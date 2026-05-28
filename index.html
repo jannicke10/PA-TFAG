@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Cause:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Syne:wght@500;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
@@ -20,28 +20,29 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
-    <div class="brand-block">
-      <p class="eyebrow">Web Development Essentials</p>
-      <a class="brand" href="#home">Jannicke G. Naesse</a>
+    <div class="site-header-inner">
+      <div class="brand-block">
+        <p class="eyebrow">Web Development Essentials</p>
+        <a class="brand" href="#home">Jannicke G. Naesse</a>
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation menu"
+      >
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#reflections">Reflections</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="site-nav"
-      aria-label="Open navigation menu"
-    >
-      Menu
-    </button>
-
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#impact">Impact</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
   <main id="main-content">
@@ -52,126 +53,112 @@
         <p class="hero-text">
          Hello world. I am Jannicke.
         </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#portfolio">View Projects</a>
+          <a class="button button-secondary" href="#contact">Say Hello</a>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="content-section">
+    <section id="about" class="content-section section-alt">
       <div class="section-heading">
-        <p class="eyebrow">Personal Information</p>
+        <p class="eyebrow">About Me</p>
         <h2>About Me</h2>
       </div>
-      <div class="two-column">
-        <div>
-          <p>
-            Yoyoyo, I believe I have som UX trauma from making endless wireframes and roadmaps for earlier projects. I will have to overcome my Figma trauma. Wish me luck.
-          </p>
-          <p>
-            lorem ipsum. 
-            I am especially interested in getting a deep dive in front end development, as I work as a team lead and product owner for TV 2s help pages and customer service chatbot!
-          </p>
-        </div>
-        <div class="panel">
+      <div class="card-grid">
+        <article class="info-card">
+          <h3>Who I Am</h3>
+          <p>I work as a team lead and product owner for TV 2's help pages and customer service chatbot, and I enjoy making digital experiences clearer and more useful for real people.</p>
+        </article>
+        <article class="info-card">
           <h3>Interests</h3>
-          <ul class="tag-list">
-            <li>My two little propellar kiddos</li>
-            <li>Frontend development</li>
-            <li>Learning user behaviour</li>
-            <li>Learning about user needs.</li>
-            <li>Analyzing user data</li>
-            <li>Content strategy</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="content-section section-alt">
-      <div class="section-heading">
-        <p class="eyebrow">Strengths</p>
-        <h2>Skills and Approach</h2>
-      </div>
-      <div class="card-grid">
-        <article class="info-card">
-          <h3>HTML5</h3>
-          <p>Using semantic structure to improve readability, SEO, and screen reader support.</p>
+          <p>I am especially interested in frontend development, user behaviour, content strategy, and understanding what users actually need from a service.</p>
         </article>
         <article class="info-card">
-          <h3>CSS3</h3>
-          <p>Building responsive layouts with flexible grids, custom properties, and clear visual hierarchy.</p>
+          <h3>Fun Facts</h3>
+          <p>I balance studying with work and family life, and a big part of that life is keeping up with my two little propeller kiddos.</p>
         </article>
         <article class="info-card">
-          <h3>JavaScript</h3>
-          <p>Adding client-side validation and small interactions that improve usability without excess complexity.</p>
-        </article>
-        <article class="info-card">
-          <h3>UX Thinking</h3>
-          <p>Designing around user needs through research, iteration, and testing rather than assumptions.</p>
+          <h3>What Drives Me</h3>
+          <p>I want a deeper understanding of how strong interfaces are built, so I can combine strategy, UX thinking, and frontend skills in the same workflow.</p>
         </article>
       </div>
     </section>
 
-    <section id="projects" class="content-section">
+    <section id="portfolio" class="content-section">
       <div class="section-heading">
-        <p class="eyebrow">Sample Work</p>
-        <h2>Featured Projects</h2>
+        <p class="eyebrow">Portfolio</p>
+        <h2>Portfolio</h2>
       </div>
-      <div class="card-grid">
+      <div class="project-gallery">
         <article class="project-card">
-          <p class="card-label">Portfolio Concept</p>
-          <h3>Student Portfolio</h3>
-          <p>
-            A single-page personal site that introduces my background, highlights my skills, and
-            gives visitors a clear way to get in touch.
-          </p>
+          <div class="project-image" role="img" aria-label="Placeholder for a screenshot of the student portfolio project">
+            Add project photo
+          </div>
+          <div class="project-content">
+            <p class="card-label">Portfolio Concept</p>
+            <h3>Student Portfolio</h3>
+            <p>
+              A single-page personal site that introduces my background, highlights my skills, and
+              gives visitors a clear way to get in touch.
+            </p>
+          </div>
         </article>
         <article class="project-card">
-          <p class="card-label">UX Process</p>
-          <h3>Prototype to Website</h3>
-          <p>
-            A workflow that starts with user research, moves through sketches and Figma prototypes,
-            and ends in accessible front-end implementation.
-          </p>
+          <div class="project-image" role="img" aria-label="Placeholder for a screenshot of a prototype to website workflow">
+            Add project photo
+          </div>
+          <div class="project-content">
+            <p class="card-label">UX Process</p>
+            <h3>Prototype to Website</h3>
+            <p>
+              A workflow that starts with user research, moves through sketches and Figma prototypes,
+              and ends in accessible front-end implementation.
+            </p>
+          </div>
         </article>
         <article class="project-card">
-          <p class="card-label">Performance</p>
-          <h3>Low-Overhead Frontend</h3>
-          <p>
-            A lightweight interface that minimizes unnecessary assets and scripting to support speed
-            and sustainability.
-          </p>
+          <div class="project-image" role="img" aria-label="Placeholder for a screenshot of a low-overhead frontend project">
+            Add project photo
+          </div>
+          <div class="project-content">
+            <p class="card-label">Performance</p>
+            <h3>Low-Overhead Frontend</h3>
+            <p>
+              A lightweight interface that minimizes unnecessary assets and scripting to support speed
+              and sustainability.
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="impact" class="content-section section-alt">
+    <section id="reflections" class="content-section section-alt">
       <div class="section-heading">
-        <p class="eyebrow">Ethics and Sustainability</p>
-        <h2>Responsible Design Choices</h2>
+        <p class="eyebrow">Reflections</p>
+        <h2>Reflections</h2>
       </div>
       <div class="two-column">
         <article class="panel">
-          <h3>Sustainable Development</h3>
+          <h3>What I Have Learned</h3>
           <p>
-            This page keeps its footprint low by using a simple file structure, limited JavaScript,
-            and content-first design. That reduces transfer size and improves loading performance.
+            This course has helped me connect design thinking with front-end implementation, from structure and accessibility to responsive layout decisions.
           </p>
         </article>
         <article class="panel">
-          <h3>Ethical Considerations</h3>
+          <h3>Course Reflections</h3>
           <p>
-            The design avoids dark patterns, provides clear navigation, respects user intent, and
-            uses accessible contrast, focus states, and form feedback.
+            I have learned that building a website is not only about making it look good, but also about making it usable, inclusive, and intentional.
           </p>
         </article>
       </div>
     </section>
 
     <section id="contact" class="content-section">
-      <div class="section-heading">
-        <p class="eyebrow">Get in Touch</p>
-        <h2>Contact Form</h2>
-      </div>
-      <div class="contact-layout">
-        <div>
+      <div class="contact-shell">
+        <div class="section-heading contact-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Contact</h2>
           <p>
             This form validates your input in the browser and prepares an email message. It is built
             to be keyboard-friendly and readable with assistive technologies.
